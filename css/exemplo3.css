@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+@keyframes pular{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-80px);
+    } 
+}
+.bolinha{
+    border-radius: 50%;
+    background: linear-gradient(#7dffc9);
+    height: 50px;
+    width: 50px;
+
+    animation: pular 1s cubic-bezier(.01, 0, 0.6, 1) infinite alternate;
+}

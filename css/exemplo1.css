@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    align-items: center;
+    background-color: #0f172a;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    min-height: 100vh;
+}
+.botao{
+    background-color: #00cc8f;
+    border: none;
+    border-radius: 999px;
+    color: #05130d;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 14px 30px;
+
+    /*linha mágica do exemplo:
+    diga quais propriedades transicionam, tempo e a curva;*/
+    transition: transform 0.3s ease, /*movimento suave*/
+                box-shadow 0.3s ease; /*brilho acompanhando*/
+}
+.botao:hover{
+    box-shadow: 0 10px 22px rgba(0, 204, 143, 0.45);
+    transform: translateY(-4px); /*negativo = sobe 4px*/
+}
